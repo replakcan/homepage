@@ -1,3 +1,126 @@
-* {
-  background-color: violet;
+@font-face {
+  font-family: 'Playfair';
+  src: url(./font/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  font-family: 'Playfair';
+}
+
+body > * {
+  padding: 1rem;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+header::before {
+  content: '';
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  background-color: rebeccapurple;
+  transform: skewY(330deg);
+  top: -90%;
+  left: -10%;
+  box-shadow: 0px 5px 5px lightpink;
+}
+
+.profile-container {
+  position: relative;
+}
+
+.profile-container h1 {
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+  color: white;
+  font-size: 4rem;
+  line-height: 90%;
+}
+
+.profile-container img {
+  box-shadow: 0px 5px 5px lightpink;
+}
+
+h2 {
+  font-family: 'Roboto';
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.2rem;
+  margin-top: 0.5rem;
+}
+
+.social-icon {
+  width: 25px;
+}
+
+.socials-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.project-card {
+  border: 1px solid lightgray;
+  box-shadow: 5px 5px 5px lightgray;
+}
+
+.project-details {
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+
+.project-link-group {
+  display: flex;
+  gap: 0.5rem;
+  position: absolute;
+  top: 10%;
+  right: 5%;
+}
+
+.project-link-group img {
+  width: 25px;
+}
+
+footer {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  color: white;
+  background-color: rebeccapurple;
+  padding-bottom: 5rem;
+}
+
+.contacts img {
+  width: 40px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
 }
